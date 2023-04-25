@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4주차 웹프로그래밍 과제5</title>
+    </head>
+    <body>
+        <h1>프로그래밍 설문지</h1>
+        <br>
+
+        <form>
+            이름 <input type="text" name="name" /><br/>
+            Email <input type="email" name="email" /><br/>
+            나이 <input type="text" name="age" /><br/>
+            직업 <select name="job">
+                <option value="student">학생</option>
+                <option value="teacher">교사</option>
+                <option value="dr">의사</option>
+                <option value="army">군인</option>
+                <option value="popo">경찰</option>
+                <option value="attorney">변호사</option>
+            </select><br/>
+            이 사이트를 친구에게 추천하겠습니까?<br/>
+            <input type="radio" name="recom" value="good">네<br>
+            <input type="radio" name="recom" value="no">아니오<br>
+            <input type="radio" name="recom" value="idk">모름<br>
+            사용 가능한 언어를 모두 체크하세요<br/>
+            <input type="checkbox" name="lang" value="c">C<br>
+            <input type="checkbox" name="lang" value="java">JAVA<br>
+            <input type="checkbox" name="lang" value="c#">C#<br>
+            <input type="checkbox" name="lang" value="python">Python<br>
+            하고싶은 제안은 적어주세요<br/>
+            <textarea name="feedback" rows="40" cols="30">
+            </textarea>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+
+        </form>
+    </body>
+</html>

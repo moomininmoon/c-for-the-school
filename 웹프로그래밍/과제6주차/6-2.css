@@ -1,0 +1,9 @@
+
+    h1{text-align: center;   color:green; font-family: 궁서체 ;}
+    p{font-size: 1.2em; color:blue; font-family: 궁서체 ;}
+    h2{text-shadow: 2px 2px 5px red;}
+    li{background-color: #cce5ff; margin: 5px; color:darkblue}
+    a:link {color :red;}
+    a:visited {color : green;}
+    a:hover {color : hotpink;}
+    body{background-color : #ffdeb8;}

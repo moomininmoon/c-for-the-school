@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4주차 웹프로그래밍 과제3</title>
+	
+</head>
+<body>
+	<h2>간단한 계산기</h2>
+    <br>
+    <br>
+    <table border="1">
+	    <tr>
+            <td colspan="4"><input type="text" id="input" size="25"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="addNumber(0)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="button" value="1" onclick="addNumber(1)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="button" value="2" onclick="addNumber(2)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="button" value="+" onclick="addOperator('+')">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="3" onclick="addNumber(3)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	        <td><input type="button" value="4" onclick="addNumber(4)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	        <td><input type="button" value="5" onclick="addNumber(5)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="button" value="-" onclick="addOperator('-')">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+	    <tr>
+            <td><input type="button" value="6" onclick="addNumber(6)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="button" value="7" onclick="addNumber(7)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="button" value="8" onclick="addNumber(8)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="button" value="*" onclick="addOperator('X')">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td><input type="button" value="9" onclick="addNumber(9)">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	        <td><input type="button" value="C" onclick="clearInput()">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	        <td><input type="button" value="=" onclick="calculate()">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	        <td><input type="button" value="/" onclick="addOperator('/')">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+    </table>
+
+	<script>
+		var input = document.getElementById("input");
+
+		function addNumber(num) {
+			input.value += num;
+		}
+
+		function addOperator(operator) {
+			input.value += operator;
+		}
+
+		function clearInput() {
+			input.value = "";
+		}
+
+		function calculate() {
+			input.value = eval(input.value);
+		}
+	</script>
+</body>
+</html>
